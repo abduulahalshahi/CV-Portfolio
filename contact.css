@@ -1,0 +1,136 @@
+:root{
+    --blue:#2563eb;
+    --blue2:#38bdf8;
+    --bg:#f6f9ff;
+    --card:#ffffff;
+    --border:#e2e8f0;
+    --text:#0f172a;
+    --muted:#64748b;
+    --radius:18px;
+    --shadow:0 14px 30px rgba(37,99,235,.08);
+  }
+  
+  /* Section */
+  #contact{
+    background: linear-gradient(180deg, var(--bg), #fff);
+    padding: 50px 18px;
+  }
+  
+  /* Head */
+  #contact .section__head{
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  #contact .section__head h2{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--text);
+  }
+  #contact .section__head p{
+    margin: 8px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  
+  /* Layout */
+  #contact .grid-2{
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  
+  /* Card */
+  #contact .card{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px 18px;
+    text-align: center;
+  }
+  
+  #contact .card h3{
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--text);
+  }
+  
+  /* Contact list (kv) */
+  #contact .kv{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+  }
+  
+  #contact .kv li{
+    padding: 12px 12px;
+    border: 1px dashed var(--border);
+    border-radius: 14px;
+    background: rgba(37,99,235,.04);
+    display: grid;
+    gap: 6px;
+  }
+  
+  #contact .kv span{
+    color: var(--muted);
+    font-weight: 900;
+    font-size: 13px;
+  }
+  
+  #contact .kv b{
+    color: var(--text);
+    font-weight: 900;
+    font-size: 14px;
+    word-break: break-word;   /* لو الرابط طويل ما يخرب التصميم */
+  }
+  
+  /* Buttons */
+  #contact .actions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  
+  #contact .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 14px;
+    border: 1px solid var(--blue);
+    background: var(--blue);
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    transition: .18s ease;
+  }
+  
+  #contact .btn:hover{
+    background: #1d4ed8;
+    transform: translateY(-1px);
+  }
+  
+  #contact .btn--ghost{
+    background: transparent;
+    color: var(--blue);
+  }
+  
+  #contact .btn--ghost:hover{
+    background: rgba(37,99,235,.06);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px){
+    #contact{ padding: 34px 14px; }
+    #contact .card{ padding: 18px 14px; }
+    #contact .section__head h2{ font-size: 26px; }
+  }
+  

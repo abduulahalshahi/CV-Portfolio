@@ -1,0 +1,141 @@
+:root{
+    --blue:#2563eb;
+    --blue2:#38bdf8;
+    --bg:#f6f9ff;
+    --card:#ffffff;
+    --border:#e2e8f0;
+    --text:#0f172a;
+    --muted:#64748b;
+    --radius:18px;
+    --shadow:0 14px 30px rgba(37,99,235,.08);
+  }
+  
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+    background: linear-gradient(180deg, var(--bg), #fff);
+    color:var(--text);
+  }
+  
+  /* Section */
+  #certificates{
+    padding:50px 16px;
+  }
+  
+  /* Head */
+  .head{
+    text-align:center;
+    max-width:900px;
+    margin:0 auto 18px;
+  }
+  .head h2{
+    margin:0;
+    font-size:30px;
+    font-weight:900;
+  }
+  .head p{
+    margin:8px 0 0;
+    color:var(--muted);
+    font-size:14px;
+  }
+  
+  /* Stack */
+  .stack{
+    max-width:900px;
+    margin:0 auto;
+    display:grid;
+    gap:14px;
+  }
+  
+  /* Card */
+  .card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:20px 18px;
+    text-align:center;
+  }
+  
+  /* Top */
+  .top{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    margin-bottom:12px;
+  }
+  .top h3{
+    margin:0;
+    font-size:18px;
+    font-weight:900;
+  }
+  
+  /* Text */
+  .muted{
+    margin:0;
+    color:var(--muted);
+    line-height:1.9;
+    font-size:15px;
+  }
+  
+  /* Pills */
+  .pill{
+    font-size:12px;
+    font-weight:900;
+    padding:7px 12px;
+    border-radius:999px;
+    border:1px solid rgba(37,99,235,.22);
+    background:rgba(37,99,235,.08);
+    color:var(--blue);
+  }
+  .pill2{
+    border-color: rgba(56,189,248,.25);
+    background: rgba(56,189,248,.12);
+    color:#0369a1;
+  }
+  
+  /* List */
+  .list{
+    list-style:none;
+    padding:0;
+    margin:14px 0 0;
+    display:grid;
+    gap:10px;
+  }
+  .list li{
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px dashed var(--border);
+    background:rgba(37,99,235,.04);
+    color:var(--muted);
+    font-size:15px;
+  }
+  
+  /* Footer */
+  .foot{
+    margin-top:14px;
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px dashed var(--border);
+    background:rgba(37,99,235,.04);
+    color:var(--muted);
+    font-weight:900;
+  }
+  .foot b{color:var(--text)}
+  
+  /* Responsive */
+  @media (max-width:600px){
+    #certificates{padding:34px 14px}
+    .card{padding:18px 14px}
+    .head h2{font-size:26px}
+  }
+  #aa{
+    text-decoration: none;
+    font-size: 50px;
+    margin-bottom: 40px;
+    background: var( --blue2);
+    border-radius: 20px;
+    padding: 11px 11px 11px 11px ;
+  }
